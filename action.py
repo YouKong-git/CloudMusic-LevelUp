@@ -97,7 +97,7 @@ class CloudMusic:
             self.beforeCount = self.getLevel()["nowPlayCount"]
 
             retext = "\"{nickname}\" 登录成功，当前等级：{level}\n\n".format(
-                nickname=self.nickname[0:1]+'****', level=self.getLevel()
+                nickname=self.nickname[0:1]+'*****', level=self.getLevel()
                 ["level"]) + "距离升级还需听{beforeCount}首歌".format(
                     beforeCount=self.getLevel()["nextPlayCount"] -
                     self.getLevel()["nowPlayCount"])
@@ -260,4 +260,5 @@ if __name__ == "__main__":
     print(j['data'])
     
     
+
     
