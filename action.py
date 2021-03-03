@@ -251,7 +251,7 @@ if __name__ == "__main__":
     #push+推送
     
     url = 'http://pushplus.hxtrip.com/send'
-    token = info['PUSHPLUSTOKEN']
+    token = os.environ['PUSHPLUSTOKEN']
     content=res
     data =  {'token':token,'title':'网易云音乐签到','content':content,'template':'html'}
     log2 = requests.post(url,data)  
