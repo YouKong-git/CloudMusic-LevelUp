@@ -101,6 +101,7 @@ python action.py 手机号 32位MD5密码加密值 -l 5173689994 4901511925
 
 - 创建 SCKEY（Server 酱 SendKey，可选）
 
+- 创建 PUSHPLUSTOKEN （使用push+推送运行结果到微信 push+官网：https://pushplus.hxtrip.com 可选）
 ![](README/image-20201110002853759.png)
 
 ### 3. 启用 Action
