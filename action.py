@@ -247,3 +247,14 @@ if __name__ == "__main__":
     except Exception as err:
         print("Server酱调用失败：" + err)
     print(30 * "=")
+    
+    #push+推送
+    
+    url = 'http://pushplus.hxtrip.com/send'
+    token = os.environ['PUSHPLUSTOKEN']
+    content=res
+    data =  {'token':token,'title':'网易云音乐签到','content':content,'template':'html'}
+    log2 = requests.post(url,data)
+    #logger.info(res)  
+    print(res.text)
+    
