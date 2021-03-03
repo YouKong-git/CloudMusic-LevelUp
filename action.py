@@ -18,6 +18,7 @@ import binascii
 import codecs
 import argparse
 import random
+import json
 from Crypto.Cipher import AES
 
 
@@ -255,7 +256,8 @@ if __name__ == "__main__":
     content=res
     data =  {'token':token,'title':'网易云音乐签到','content':content,'template':'html'}
     log2 = requests.post(url,data)  
-    print(log2.text[33:39])
+    j = json.loads(log2.text, strict=False) 
+    print(j['data']))
     
     
     
