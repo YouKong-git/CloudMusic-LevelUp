@@ -254,7 +254,6 @@ if __name__ == "__main__":
     token = os.environ['PUSHPLUSTOKEN']
     content=res
     data =  {'token':token,'title':'网易云音乐签到','content':content,'template':'html'}
-    log2 = requests.post(url,data)
-    #logger.info(res)  
+    log2 = requests.post(url,data)  
     print(res.text)
     
