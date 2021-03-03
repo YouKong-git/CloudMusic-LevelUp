@@ -257,7 +257,7 @@ if __name__ == "__main__":
     data =  {'token':token,'title':'网易云音乐签到','content':content,'template':'html'}
     log2 = requests.post(url,data)  
     j = json.loads(log2.text, strict=False) 
-    print(j['data']))
+    print(j['data'])
     
     
     
