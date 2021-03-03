@@ -29,6 +29,7 @@ jobs:
           NOMD5_PASSWORD: ${{ secrets.NOMD5_PASSWORD }}
           PLAYLIST: ${{ secrets.PLAYLIST }}
           SCKEY: ${{ secrets.SCKEY }}
+          PUSHPLUSTOKEN: ${{ secrets.PUSHPLUSTOKEN }}
         run: |
           if [ ${NOMD5_PASSWORD} ];then PASSWORD=$(echo -n "${NOMD5_PASSWORD}"|md5sum|cut -d " " -f1); fi
           if [ ${PLAYLIST} ];then PLAYLIST_CMD="-l $PLAYLIST"; fi
